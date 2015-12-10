@@ -1,4 +1,4 @@
-export default function bufferedApply<T>(f: (buffer: T[]) => void, wait: number): (t: T) => void {
+export function bufferedApply<T>(f: (buffer: T[]) => void, wait: number): (t: T) => void {
   let buffer: T[] = [];
   return (t: T): void => {
     buffer.push(t);
