@@ -4,17 +4,17 @@ var assert = require('power-assert');
 var sinon  = require('sinon');
 var accumulateUntil = require('../built/src/').accumulateUntil;
 
-describe('accumulateUntil', () => {
+describe('accumulateUntil', function () {
   var CLOCK;
 
-  before(() => {
+  before(function () {
     CLOCK = sinon.useFakeTimers();
   });
-  after(() => {
+  after(function () {
     CLOCK.restore()
   });
 
-  it('buffers frequently calls', () => {
+  it('buffers frequently calls', function () {
     var callback = sinon.spy();
     var accumulated = accumulateUntil(callback, 3);
 
