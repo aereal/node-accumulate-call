@@ -17,3 +17,11 @@ document.body.addEventListener('click', accumulateUntil((events) => {
     console.log(`Clicked ${events.length} times`);
 }, 1000));
 ```
+
+## Author
+
+aereal
+
+## License
+
+MIT License
