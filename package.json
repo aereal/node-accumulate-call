@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc -p .",
     "test-mocha": "mocha test/**/*_test.js",
-    "test": "npm-run-all -s build test-mocha"
+    "test": "npm-run-all -s build test-mocha",
+    "prepublish": "npm test"
   },
   "repository": {
     "type": "git",
