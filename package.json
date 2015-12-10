@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "Accumulate function calls",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc -p .",
     "test-mocha": "mocha test/**/*_test.js",
