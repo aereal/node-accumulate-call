@@ -1,4 +1,4 @@
-export function bufferedApply<T>(f: (buffer: T[]) => void, wait: number): (t: T) => void {
+export function accumulateUntil<T>(f: (buffer: T[]) => void, untilGap: number): (t: T) => void {
   let buffer: T[] = [];
   return (t: T): void => {
     buffer.push(t);
@@ -7,6 +7,6 @@ export function bufferedApply<T>(f: (buffer: T[]) => void, wait: number): (t: T)
         f(buffer);
         buffer = [];
       }
-    }, wait);
+    }, untilGap);
   };
 }

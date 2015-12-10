@@ -2,9 +2,9 @@
 
 let assert = require('power-assert');
 let sinon  = require('sinon');
-let bufferedApply = require('../built/src/').bufferedApply;
+let accumulateUntil = require('../built/src/').accumulateUntil;
 
-describe('bufferedApply', () => {
+describe('accumulateUntil', () => {
   var CLOCK;
 
   before(() => {
@@ -16,17 +16,17 @@ describe('bufferedApply', () => {
 
   it('buffers frequently calls', () => {
     let callback = sinon.spy();
-    let buffered = bufferedApply(callback, 3);
+    let accumulated = accumulateUntil(callback, 3);
 
-    buffered('a');
+    accumulated('a');
     CLOCK.tick(1);
     assert(!callback.called);
 
-    buffered('b');
+    accumulated('b');
     CLOCK.tick(1);
     assert(!callback.called);
 
-    buffered('c');
+    accumulated('c');
     CLOCK.tick(1);
     assert(callback.called);
     assert(callback.calledWith(['a', 'b', 'c']));
