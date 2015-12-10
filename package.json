@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/aereal/node-buffered-apply/issues"
   },
-  "homepage": "https://github.com/aereal/node-buffered-apply#readme"
+  "homepage": "https://github.com/aereal/node-buffered-apply#readme",
+  "devDependencies": {
+    "typescript": "^1.7.3"
+  }
 }
