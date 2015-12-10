@@ -2,6 +2,12 @@
 
 Accumulate function calls
 
+## Install
+
+```
+npm install accumulate-call
+```
+
 ## Usage
 
 ```
