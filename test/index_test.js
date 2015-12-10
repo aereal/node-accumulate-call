@@ -2,7 +2,7 @@
 
 var assert = require('power-assert');
 var sinon  = require('sinon');
-var accumulateUntil = require('../built/src/').accumulateUntil;
+var accumulateUntil = require('../dist/').accumulateUntil;
 
 describe('accumulateUntil', function () {
   var CLOCK;
