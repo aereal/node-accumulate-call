@@ -1,2 +1,2 @@
-# accumulat-call
+# accumulate-call
 
