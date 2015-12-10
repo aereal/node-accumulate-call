@@ -18,6 +18,10 @@ document.body.addEventListener('click', accumulateUntil((events) => {
 }, 1000));
 ```
 
+## API
+
+See [type definitions](dist/index.d.ts).
+
 ## Author
 
 aereal
