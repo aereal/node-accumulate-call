@@ -1,22 +1,22 @@
 'use strict';
 
-let assert = require('power-assert');
-let sinon  = require('sinon');
-let accumulateUntil = require('../built/src/').accumulateUntil;
+var assert = require('power-assert');
+var sinon  = require('sinon');
+var accumulateUntil = require('../built/src/').accumulateUntil;
 
-describe('accumulateUntil', () => {
+describe('accumulateUntil', function () {
   var CLOCK;
 
-  before(() => {
+  before(function () {
     CLOCK = sinon.useFakeTimers();
   });
-  after(() => {
+  after(function () {
     CLOCK.restore()
   });
 
-  it('buffers frequently calls', () => {
-    let callback = sinon.spy();
-    let accumulated = accumulateUntil(callback, 3);
+  it('buffers frequently calls', function () {
+    var callback = sinon.spy();
+    var accumulated = accumulateUntil(callback, 3);
 
     accumulated('a');
     CLOCK.tick(1);
