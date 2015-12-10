@@ -1,4 +1,4 @@
-# accumulate-call [![Build Status](https://travis-ci.org/aereal/node-accumulate-call.svg?branch=master)](https://travis-ci.org/aereal/node-accumulate-call)
+# accumulate-call [![Build Status][travis-badge]][travis-url]
 
 Accumulate function calls
 
@@ -25,3 +25,6 @@ aereal
 ## License
 
 MIT License
+
+[travis-url]: https://travis-ci.org/aereal/node-accumulate-call
+[travis-badge]: https://travis-ci.org/aereal/node-accumulate-call.svg?branch=master
