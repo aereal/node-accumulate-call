@@ -1,5 +1,7 @@
 # accumulate-call [![Build Status](https://travis-ci.org/aereal/node-accumulate-call.svg?branch=master)](https://travis-ci.org/aereal/node-accumulate-call)
 
+Accumulate function calls
+
 ## Usage
 
 ```
